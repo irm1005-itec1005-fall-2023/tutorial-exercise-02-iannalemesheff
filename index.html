@@ -276,7 +276,7 @@
         <div><label for="phone">Phone:</label>
         <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required placeholder="(613)-000-0000"/> </div>
 
-        <div><label for="ward">Ward:</label>
+        <div><label for="ward-select">Ward:</label>
         <select required name="ward" id="ward-select">
           <option value="">--Please choose an option--</option>
           <option value="ORLÉANS EAST-CUMBERLAND">ORLÉANS EAST-CUMBERLAND</option>
@@ -312,17 +312,17 @@
           <input  required id="subject" type="text" /></div>
 
           <span>Feedback type:</span>
-          <label for="checkbox">Suggestion</label>
+          <label for="suggestion">Suggestion</label>
           <input type="checkbox" id="suggestion" name="suggestion" />
-          <label for="checkbox">Concern</label>
+          <label for="concern">Concern</label>
           <input type="checkbox" id="concern" name="concern" />
-          <label for="checkbox">Appreciation</label>
+          <label for="appreciation">Appreciation</label>
           <input type="checkbox" id="appreciation" name="appreciation" />
 
           <div><label for="feedback-details">Feedback details:</label>
             <textarea required rows="10" id="feedback-details"></textarea></div>
 
-            <div><label for="priority">Priority level:</label>
+            <div><label for="priority-select">Priority level:</label>
               <select required name="priority" id="priority-select">
                 <option value="">--Please choose an option--</option>
                 <option value="low">Low</option>
@@ -333,9 +333,9 @@
       </fieldset>
       <fieldset>
         <legend>Follow-up Information</legend>
-          <label for="checkbox">I would like to receive a follow up response.</label>
+          <label for="yes">I would like to receive a follow up response.</label>
           <input type="checkbox" id="yes" name="yes" />
-        <div><label for="contact">Preferred contact method:</label></div>
+        <div><label for="contact-select">Preferred contact method:</label></div>
         <select name="contact" id="contact-select">
           <option value="">--Please choose an option--</option>
           <option value="email">Email</option>
@@ -344,8 +344,8 @@
       </fieldset>
       <fieldset>
         <legend>Submit Feedback</legend>
-        <label for="checkbox">I consent to the use of my feedback.</label>
-        <div><button type="submit">Submit Feedback</button></div>
+        <label for="submit">I consent to the use of my feedback.</label>
+        <div><button type="submit" id="submit">Submit Feedback</button></div>
       </fieldset>
     </form>
   </body>
